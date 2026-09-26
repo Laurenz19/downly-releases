@@ -1,0 +1,24 @@
+<!-- Downly app icon, large sizes (64px and up) — same mark as .titlebar-mark in
+     the UI: a download arrow in white on the accent rounded tile. Small sizes
+     use the pixel-grid versions icon-16.svg / icon-32.svg so they stay crisp.
+     Regenerate build/icon.ico with `npm run icon`. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e35a3b"/>
+      <stop offset="1" stop-color="#c83c22"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#tile)"/>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#sheen)"/>
+  <rect x="8.75" y="8.75" width="238.5" height="238.5" rx="55.25" fill="none" stroke="#000000" stroke-opacity="0.08" stroke-width="1.5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 62V150"/>
+    <path d="M84 108L128 152L172 108"/>
+    <path d="M80 194H176"/>
+  </g>
+</svg>
