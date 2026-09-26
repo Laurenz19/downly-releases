@@ -583,6 +583,12 @@ a:focus-visible {
   .steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  /* An odd card out spans the row instead of sitting alone at half width. */
+  .downloads > :last-child:nth-child(odd),
+  .steps > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 640px) {
